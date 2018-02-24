@@ -8,7 +8,7 @@ body{
 
   font-family: 'Cormorant Garamond', serif;
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
 }
 
 /* Menu */
@@ -97,8 +97,6 @@ nav a {
   background-repeat: no-repeat;
 }
 
-
-
 #home h1 {
   margin: 100px 0 0px 0;
   font-size: 3.5em;
@@ -115,9 +113,8 @@ nav a {
 #about {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-
-height: auto;
+  padding: 15px;
+  height: auto;
   background: #2D313C;
 }
 article{
@@ -257,4 +254,119 @@ p {
 .gallery>div:nth-child(7){
   grid-area: g;
   background-image:url("img/7.jpg");
+}
+
+@media all and (min-width: 768px) {
+
+  #home h1 {
+
+    font-size: 8em;
+
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 50vh;
+    background: #2D313C;
+  }
+  article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+@media  all and (min-width: 1024px) {
+  .hamburger{
+    display: none;
+  }
+  .nav-inicio{
+
+      left: 0;
+      background: #2D313C;
+      display: flex;
+      flex-direction: row;
+      height: 30px;
+      width: 100vw;
+      transition: all .5s ease;
+
+  }
+  .nav-inicio a{
+      text-decoration: none;
+  }
+  #about {
+
+    padding: 40px;
+    height: 30vh;
+    background: #2D313C;
+  }
+  article{
+
+
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+@media all and (min-width:1025px) {
+  #home {
+    background-size: 50%;
+    background-position: right bottom;
+    align-items: flex-start;
+    margin-left:30px;
+
+
+}
+    #home h3{
+      margin-left: 60px;
+    }
+    #home h1{
+      margin-top:200px;
+    }
+    #about {
+      padding: 40px;
+      height: 100vh;
+
+    }
+    article{
+      padding-right:30%;
+        padding-left:30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .gallery{
+
+
+        grid-template-rows:repeat(3,1fr);
+        grid-template-columns:repeat(5,1fr);
+        grid-template-areas:"a a e e b"
+                            "a a e e b"
+                            "c d d f g"
+
+
+
+                    }
+    .gallery>div:nth-child(8){
+                      grid-area: h;
+                      background-image:url("img/7.jpg");
+            }
+  body::-webkit-scrollbar-track {
+                background-color: #F4F4F4;
+            }
+
+  body::-webkit-scrollbar {
+                z-index:999;
+                width: 6px;
+                background: black;
+            }
+            body::-webkit-scrollbar-thumb {
+                background:   #2D313C;
+            }
+
 }
