@@ -15,7 +15,7 @@ Link do site: [__Steve Jobs tribute__](https://gracious-mayer-fd1e42.netlify.com
 
 ### Oque aprendi com  esse pequeno projeto?
 
-  O conceito de mobile First é muito importante fazer um deste o inicio o layout voltado pro mobile além de ser mais ágil consegui identificar coisas que não eram tão necessárias no site, o uso de flexbox junto com CSSgrid consegue trazer um posicionamento mais exato e mais organizados dos itens, facilitando a responsividade, entendi como funciona Medias Queries e como sao poderosas. 
+  O conceito de mobile First é muito importante além de ser mais ágil consegui identificar coisas que não eram tão necessárias no site, o uso de flexbox junto com CSSgrid consegue trazer um posicionamento mais exato e mais organizados dos itens, facilitando a responsividade, entendi como funciona Medias Queries e como sao poderosas. 
 
 
 * Obs: O intuito do site foi apenas de estudo, nao foquei praticamente nada no conteudo.
